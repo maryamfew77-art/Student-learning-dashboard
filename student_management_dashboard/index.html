@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3>🎓Maryam's Learning Dashboard</h3>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#">📚My courses</a></li>
+          <li><a href="#">📊Progress</a></li>
+          <li><a href="#">📝Notes</a></li>
+          <li><a href="#">⚙️Settings</a></li>
+        </ul>
+        <div class="profile">
+          <h3>👤Maryam</h3>
+          <p>Software Engineering Student</p>
+        </div>
+      </aside>
+      <div class="container">
+        <header class="header">
+          <div class="welcome">
+            <h1>Welcome back, Maryam!👋</h1>
+            <p>Keep learning and growing!</p>
+          </div>
+
+          <div class="clock">
+            <div class="clock-icon">🕒</div>
+            <div class="clock-info">
+              <h2 id="time">12:02AM</h2>
+              <p id="date">Monday, July 8, 2026</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="card-sec">
+          <div class="cards">
+            <div class="card">
+              <p class="card-title">Total Courses</p>
+              <h2 class="total-value">6</h2>
+              <p class="card-description">All Courses</p>
+            </div>
+            <div class="card">
+              <p class="card-title">Learning</p>
+              <h2 class="learning-value">3</h2>
+              <p class="card-description">In Progress</p>
+            </div>
+            <div class="card">
+              <p class="card-title">Completed</p>
+              <h2 class="completed-value">3</h2>
+              <p class="card-description">Done</p>
+            </div>
+          </div>
+          <div class="contant-row">
+            <div class="card1">
+              <div class="card-header">
+                <div class="plus-icon">+</div>
+                <h2>Add New Course</h2>
+              </div>
+
+              <div class="field">
+                <label for="coursename">Course Name</label>
+                <input
+                  type="text"
+                  id="coursename"
+                  placeholder="e.g. JavaScript"
+                />
+              </div>
+
+              <div class="field">
+                <label for="weeks">Weeks Learning</label>
+                <input type="text" id="weeks" placeholder="e.g. 4 weeks" />
+              </div>
+
+              <div class="row">
+                <div class="field">
+                  <label for="difficulty">Difficulty</label>
+                  <select id="difficulty">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="status">Status</label>
+                  <select id="status">
+                    <option>Learning</option>
+                    <option>Completed</option>
+                    <option>Paused</option>
+                  </select>
+                </div>
+
+                <button class="add-btn">+ Add Course</button>
+              </div>
+             </div>
+            <div class="course-list">
+              <h1>📖 My Courses</h1>
+              <input class="search-box" placeholder="Search courses..." />
+<div class="grid1"></div>
+              <div class="grid" id="courseGrid">
+                <div class="course-card js">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-js">JS</div>
+                      <div class="title-block">
+                        <h3>JavaScript</h3>
+                        <p>4 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Beginner</span>
+                    <span class="tag status-learning">Learning</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+
+                <div class="course-card react">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-react">⚛</div>
+                      <div class="title-block">
+                        <h3>React</h3>
+                        <p>2 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Intermediate</span>
+                    <span class="tag status-learning">Learning</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+
+                <div class="course-card cpp">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-cpp">C++</div>
+                      <div class="title-block">
+                        <h3>C++</h3>
+                        <p>6 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Intermediate</span>
+                    <span class="tag status-completed">Completed</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+
+                <div class="course-card csharp">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-csharp">C#</div>
+                      <div class="title-block">
+                        <h3>C#</h3>
+                        <p>5 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Intermediate</span>
+                    <span class="tag status-completed">Completed</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+
+                <div class="course-card html">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-html">5</div>
+                      <div class="title-block">
+                        <h3>HTML &amp; CSS</h3>
+                        <p>8 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Beginner</span>
+                    <span class="tag status-completed">Completed</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+
+                <div class="course-card sql">
+                  <div class="card-top">
+                    <div class="icon-title">
+                      <div class="icon-box icon-sql">SQL</div>
+                      <div class="title-block">
+                        <h3>SQL</h3>
+                        <p>3 weeks</p>
+                      </div>
+                    </div>
+                    <div class="menu-dots">⋮</div>
+                  </div>
+                  <div class="tags">
+                    <span class="tag difficulty">Beginner</span>
+                    <span class="tag status-learning">Learning</span>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-introduce">👤 Introduce</button>
+                    <button class="btn-details">ⓘ Details</button>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+     </div>
+ </div>
+     <script src="./script.js"></script> 
+  </body>
+</html>
